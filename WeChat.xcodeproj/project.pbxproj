@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8725DD9728928C1700174B05 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725DD9628928C1700174B05 /* HomePageViewController.swift */; };
+		8725DD9928928D6300174B05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8725DD9828928D6300174B05 /* GoogleService-Info.plist */; };
+		8725DD9C2892928000174B05 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 8725DD9B2892928000174B05 /* GoogleSignIn */; };
+		8725DD9F2893AC9500174B05 /* SignUpCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725DD9E2893AC9500174B05 /* SignUpCodes.swift */; };
 		8783EDF72886BF9C00FB8DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783EDF62886BF9C00FB8DF6 /* AppDelegate.swift */; };
 		8783EDF92886BF9C00FB8DF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783EDF82886BF9C00FB8DF6 /* SceneDelegate.swift */; };
-		8783EDFB2886BF9C00FB8DF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783EDFA2886BF9C00FB8DF6 /* ViewController.swift */; };
 		8783EDFE2886BF9C00FB8DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8783EDFC2886BF9C00FB8DF6 /* Main.storyboard */; };
 		8783EE002886BF9D00FB8DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8783EDFF2886BF9D00FB8DF6 /* Assets.xcassets */; };
 		8783EE032886BF9D00FB8DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8783EE012886BF9D00FB8DF6 /* LaunchScreen.storyboard */; };
+		87B60A4C2888639E00D08BA1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 87B60A4B2888639E00D08BA1 /* FirebaseAuth */; };
+		87B60A4E2888639E00D08BA1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 87B60A4D2888639E00D08BA1 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8725DD9628928C1700174B05 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		8725DD9828928D6300174B05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8725DD9E2893AC9500174B05 /* SignUpCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCodes.swift; sourceTree = "<group>"; };
 		8783EDF32886BF9C00FB8DF6 /* WeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8783EDF62886BF9C00FB8DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8783EDF82886BF9C00FB8DF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8783EDFA2886BF9C00FB8DF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8783EDFD2886BF9C00FB8DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8783EDFF2886BF9D00FB8DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8783EE022886BF9D00FB8DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,12 +38,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B60A4C2888639E00D08BA1 /* FirebaseAuth in Frameworks */,
+				87B60A4E2888639E00D08BA1 /* FirebaseFirestore in Frameworks */,
+				8725DD9C2892928000174B05 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8725DD9D2893AC6400174B05 /* FirebaseModels */ = {
+			isa = PBXGroup;
+			children = (
+				8725DD9E2893AC9500174B05 /* SignUpCodes.swift */,
+			);
+			path = FirebaseModels;
+			sourceTree = "<group>";
+		};
 		8783EDEA2886BF9C00FB8DF6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +74,15 @@
 		8783EDF52886BF9C00FB8DF6 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
+				8725DD9D2893AC6400174B05 /* FirebaseModels */,
 				8783EDF62886BF9C00FB8DF6 /* AppDelegate.swift */,
 				8783EDF82886BF9C00FB8DF6 /* SceneDelegate.swift */,
-				8783EDFA2886BF9C00FB8DF6 /* ViewController.swift */,
 				8783EDFC2886BF9C00FB8DF6 /* Main.storyboard */,
 				8783EDFF2886BF9D00FB8DF6 /* Assets.xcassets */,
 				8783EE012886BF9D00FB8DF6 /* LaunchScreen.storyboard */,
 				8783EE042886BF9D00FB8DF6 /* Info.plist */,
+				8725DD9828928D6300174B05 /* GoogleService-Info.plist */,
+				8725DD9628928C1700174B05 /* HomePageViewController.swift */,
 			);
 			path = WeChat;
 			sourceTree = "<group>";
@@ -83,6 +103,11 @@
 			dependencies = (
 			);
 			name = WeChat;
+			packageProductDependencies = (
+				87B60A4B2888639E00D08BA1 /* FirebaseAuth */,
+				87B60A4D2888639E00D08BA1 /* FirebaseFirestore */,
+				8725DD9B2892928000174B05 /* GoogleSignIn */,
+			);
 			productName = WeChat;
 			productReference = 8783EDF32886BF9C00FB8DF6 /* WeChat.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,10 @@
 				Base,
 			);
 			mainGroup = 8783EDEA2886BF9C00FB8DF6;
+			packageReferences = (
+				87B60A4A2888639E00D08BA1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8725DD9A2892928000174B05 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 8783EDF42886BF9C00FB8DF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +156,7 @@
 			files = (
 				8783EE032886BF9D00FB8DF6 /* LaunchScreen.storyboard in Resources */,
 				8783EE002886BF9D00FB8DF6 /* Assets.xcassets in Resources */,
+				8725DD9928928D6300174B05 /* GoogleService-Info.plist in Resources */,
 				8783EDFE2886BF9C00FB8DF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8783EDFB2886BF9C00FB8DF6 /* ViewController.swift in Sources */,
+				8725DD9F2893AC9500174B05 /* SignUpCodes.swift in Sources */,
 				8783EDF72886BF9C00FB8DF6 /* AppDelegate.swift in Sources */,
 				8783EDF92886BF9C00FB8DF6 /* SceneDelegate.swift in Sources */,
+				8725DD9728928C1700174B05 /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +389,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8725DD9A2892928000174B05 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		87B60A4A2888639E00D08BA1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8725DD9B2892928000174B05 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8725DD9A2892928000174B05 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		87B60A4B2888639E00D08BA1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B60A4A2888639E00D08BA1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		87B60A4D2888639E00D08BA1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B60A4A2888639E00D08BA1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8783EDEB2886BF9C00FB8DF6 /* Project object */;
 }
