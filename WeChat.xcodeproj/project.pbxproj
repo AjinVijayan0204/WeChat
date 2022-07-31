@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8725DD9728928C1700174B05 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725DD9628928C1700174B05 /* HomePageViewController.swift */; };
+		8725DD9728928C1700174B05 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725DD9628928C1700174B05 /* SignInViewController.swift */; };
 		8725DD9928928D6300174B05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8725DD9828928D6300174B05 /* GoogleService-Info.plist */; };
 		8725DD9C2892928000174B05 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 8725DD9B2892928000174B05 /* GoogleSignIn */; };
 		8725DD9F2893AC9500174B05 /* SignUpCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725DD9E2893AC9500174B05 /* SignUpCodes.swift */; };
+		8725DDA12895253E00174B05 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725DDA02895253E00174B05 /* HomePageViewController.swift */; };
+		8725DDA328953EF300174B05 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725DDA228953EF300174B05 /* FriendsTableViewCell.swift */; };
+		8725DDA5289540A000174B05 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725DDA4289540A000174B05 /* ChatsViewController.swift */; };
+		8725DDA72895A22300174B05 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725DDA62895A22300174B05 /* TableViewController.swift */; };
+		8725DDAB28967FEA00174B05 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725DDAA28967FE900174B05 /* FirstScreen.swift */; };
 		8783EDF72886BF9C00FB8DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783EDF62886BF9C00FB8DF6 /* AppDelegate.swift */; };
 		8783EDF92886BF9C00FB8DF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783EDF82886BF9C00FB8DF6 /* SceneDelegate.swift */; };
 		8783EDFE2886BF9C00FB8DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8783EDFC2886BF9C00FB8DF6 /* Main.storyboard */; };
@@ -21,9 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8725DD9628928C1700174B05 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		8725DD9628928C1700174B05 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8725DD9828928D6300174B05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8725DD9E2893AC9500174B05 /* SignUpCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCodes.swift; sourceTree = "<group>"; };
+		8725DDA02895253E00174B05 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		8725DDA228953EF300174B05 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		8725DDA4289540A000174B05 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		8725DDA62895A22300174B05 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8725DDAA28967FE900174B05 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		8783EDF32886BF9C00FB8DF6 /* WeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8783EDF62886BF9C00FB8DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8783EDF82886BF9C00FB8DF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +92,12 @@
 				8783EE012886BF9D00FB8DF6 /* LaunchScreen.storyboard */,
 				8783EE042886BF9D00FB8DF6 /* Info.plist */,
 				8725DD9828928D6300174B05 /* GoogleService-Info.plist */,
-				8725DD9628928C1700174B05 /* HomePageViewController.swift */,
+				8725DD9628928C1700174B05 /* SignInViewController.swift */,
+				8725DDA02895253E00174B05 /* HomePageViewController.swift */,
+				8725DDA228953EF300174B05 /* FriendsTableViewCell.swift */,
+				8725DDA4289540A000174B05 /* ChatsViewController.swift */,
+				8725DDA62895A22300174B05 /* TableViewController.swift */,
+				8725DDAA28967FE900174B05 /* FirstScreen.swift */,
 			);
 			path = WeChat;
 			sourceTree = "<group>";
@@ -171,7 +186,12 @@
 				8725DD9F2893AC9500174B05 /* SignUpCodes.swift in Sources */,
 				8783EDF72886BF9C00FB8DF6 /* AppDelegate.swift in Sources */,
 				8783EDF92886BF9C00FB8DF6 /* SceneDelegate.swift in Sources */,
-				8725DD9728928C1700174B05 /* HomePageViewController.swift in Sources */,
+				8725DDA72895A22300174B05 /* TableViewController.swift in Sources */,
+				8725DDAB28967FEA00174B05 /* FirstScreen.swift in Sources */,
+				8725DDA328953EF300174B05 /* FriendsTableViewCell.swift in Sources */,
+				8725DDA5289540A000174B05 /* ChatsViewController.swift in Sources */,
+				8725DDA12895253E00174B05 /* HomePageViewController.swift in Sources */,
+				8725DD9728928C1700174B05 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

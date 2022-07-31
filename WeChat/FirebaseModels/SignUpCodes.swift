@@ -13,9 +13,10 @@ import FirebaseCore
 class SignUpCodes{
     
     //SignUp firebase
-    func createUser(email:String, password:String) {
+    func createUser(email:String, password:String, displayName:String) {
         Auth.auth().createUser(withEmail: email, password: password){ authResult,error in
             if let user = authResult?.user{
+                
                 print("True")
             }else{
                 print("False")
@@ -24,7 +25,13 @@ class SignUpCodes{
             if let err = error{
                 print(err)
             }
+            let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+            changeRequest?.displayName = displayName
+            changeRequest?.commitChanges { error in
+              // ...
+            }
         }
+        
     }
     
     //SignUp
@@ -64,6 +71,14 @@ class SignUpCodes{
                 }
                 // User is signed in
                 // ...
+                if let result = authResult{
+                    let strybrd = UIStoryboard(name: "Main", bundle: nil)
+                    var chatScreeen = strybrd.instantiateViewController(withIdentifier: "chatView") as! ChatsViewController
+                    chatScreeen.user = result
+                    chatScreeen.modalPresentationStyle = .fullScreen
+                    context.present(chatScreeen, animated: true, completion: nil)
+                }
+                
                 
             }
         }
